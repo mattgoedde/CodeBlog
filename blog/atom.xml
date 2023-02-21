@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mattgoedde.github.io/blog</id>
+    <title>M. Goedde Blog</title>
+    <updated>2023-02-21T14:38:44.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mattgoedde.github.io/blog"/>
+    <subtitle>M. Goedde Blog</subtitle>
+    <icon>https://mattgoedde.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hello World!]]></title>
+        <id>https://mattgoedde.github.io/blog/hello-world</id>
+        <link href="https://mattgoedde.github.io/blog/hello-world"/>
+        <updated>2023-02-21T14:38:44.000Z</updated>
+        <summary type="html"><![CDATA[This is the beginning of time!]]></summary>
+        <content type="html"><![CDATA[<p>This is the beginning of time!</p>]]></content>
+    </entry>
+</feed>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[195],{2841:(e,t,i)=>{i.r(t),i.d(t,{default:()=>r});var l=i(7294),n=i(2263),s=i(7676);function r(){const{siteConfig:e}=(0,n.Z)();return l.createElement(s.Z,{title:`Hello from ${e.title}`,description:"Matt Goedde's profile page."},l.createElement("main",null))}}}]);
