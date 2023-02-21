@@ -83,15 +83,15 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Snippets',
+                to: '/docs/category/snippets',
+              },
+            ],
+          },
           // {
           //   title: 'Community',
           //   items: [
@@ -109,21 +109,21 @@ const config = {
           //     },
           //   ],
           // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/mattgoedde',
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Matt Goedde. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Matt Goedde.`,
       },
       prism: {
         theme: lightCodeTheme,
