@@ -6,7 +6,7 @@ Extra extension methods for `HttpClient`
 using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 
-namespace RefineryCostReporting.IntegrationTests.Helpers;
+namespace YourNamespace;
 
 /// <summary>
 /// Extension methods adding additional functionality to HttpClient
