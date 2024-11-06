@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace Refinery.CostReporting.Common;
+namespace YourNamespace;
 
 /// <summary>
 /// Automatically logs the elapsed time of the scope it is inside of
