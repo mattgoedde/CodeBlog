@@ -86,5 +86,32 @@ public static class HttpClientExtensions
 
         return JsonSerializer.Deserialize<TResponse>(responseContentString, options);
     }
+
+    /// <summary>
+    /// Send POST request without body content and deserialize response
+    /// </summary>
+    /// <typeparam name="TResponse">Object to receive</typeparam>
+    /// <param name="client">The <see cref="HttpClient"/> to send the request</param>
+    /// <param name="requestUri">The URI to send the request to</param>
+    /// <param name="options">Optional. <see cref="JsonSerializerOptions"/> to configure deserializing the response</param>
+    /// <param name="cancellationToken">Optional. <see cref="CancellationToken"/></param>
+    /// <returns>Body content deserialized from JSON</returns>
+    /// <exception cref="ArgumentNullException"></exception>
+    /// <returns></returns>
+    public static async Task<TResponse?> PostWithoutBodyAsync<TResponse>(this HttpClient client, string requestUri, JsonSerializerOptions? options = null, CancellationToken cancellationToken = default)
+    {
+        if (string.IsNullOrEmpty(requestUri))
+        {
+            throw new ArgumentNullException(nameof(requestUri));
+        }
+
+        HttpRequestMessage request = new(HttpMethod.Post, requestUri);
+
+        HttpResponseMessage response = await client.SendAsync(request, cancellationToken);
+
+        string responseContentString = await response.Content.ReadAsStringAsync(cancellationToken);
+
+        return JsonSerializer.Deserialize<TResponse>(responseContentString, options);
+    }
 }
 ```
